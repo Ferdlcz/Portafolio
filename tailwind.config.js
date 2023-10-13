@@ -14,8 +14,7 @@ module.exports = {
 
       fontFamily:{
         varela:['Varela Round', 'Almarai', 'sans-serif', ...defaultTheme.fontFamily.sans]
-      }
-
+      },
     },
   },
   plugins: [],
