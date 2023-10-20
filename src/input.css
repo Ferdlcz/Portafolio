@@ -20,13 +20,24 @@
 html{
     scroll-behavior: smooth;
 }
-
-@keyframes spin {
-    to {
-      transform: rotate(720deg); /* Dos vueltas completas (360deg * 2) */
-    }
-  }
   
-  .hover-spin:hover {
-    animation: spin 2s linear forwards; /* Cambiado a 2 segundos para las dos vueltas */
+
+.image-container img {
+  border-radius: 5%;
+  transition: border-color 0.3s ease-in-out;
+  animation: shine 1.5s infinite;
+  border-color: rgba(255, 255, 255, 0.7);
+
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
   }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}

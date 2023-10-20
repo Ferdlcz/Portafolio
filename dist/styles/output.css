@@ -550,6 +550,11 @@ video {
   margin: auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -563,11 +568,6 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mb-5 {
@@ -622,6 +622,10 @@ video {
   width: 1100px;
 }
 
+.w-\[1200px\] {
+  width: 1200px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -636,10 +640,6 @@ video {
 
 .w-\[320px\] {
   width: 320px;
-}
-
-.w-\[700px\] {
-  width: 700px;
 }
 
 .w-\[85\%\] {
@@ -678,10 +678,6 @@ video {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .grid-cols-4 {
@@ -757,10 +753,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/dist\/img\/Fotoperfil\.webp\'\)\] {
-  background-image: url('../dist/img/Fotoperfil.webp');
-}
-
 .bg-\[url\(\'\.\.\/img\/Fotoperfil\.webp\'\)\] {
   background-image: url('../img/Fotoperfil.webp');
 }
@@ -810,8 +802,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pt-10 {
@@ -914,16 +914,25 @@ html{
   scroll-behavior: smooth;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(720deg);
-    /* Dos vueltas completas (360deg * 2) */
-  }
+.image-container img {
+  border-radius: 5%;
+  transition: border-color 0.3s ease-in-out;
+  animation: shine 1.5s infinite;
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
-.hover-spin:hover {
-  animation: spin 2s linear forwards;
-  /* Cambiado a 2 segundos para las dos vueltas */
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .hover\:scale-110:hover {
@@ -1072,16 +1081,8 @@ html{
     align-self: center;
   }
 
-  .lg\:bg-\[url\(\'\.\.\/dist\/img\/Fotoperfil\.webp\'\)\] {
-    background-image: url('../dist/img/Fotoperfil.webp');
-  }
-
   .lg\:bg-\[url\(\'\.\.\/img\/Fotoperfil\.webp\'\)\] {
     background-image: url('../img/Fotoperfil.webp');
-  }
-
-  .lg\:bg-\[url\(\'\.\/img\/Fotoperfil\.webp\'\)\] {
-    background-image: url('./img/Fotoperfil.webp');
   }
 
   .lg\:bg-\[length\:617px_840px\] {

@@ -63,18 +63,16 @@ darkButton.addEventListener("click", function () {
   }
 });
 
-
 // Descargar curriculum
 
 const downloadCv = document.querySelector("#cv");
 
-downloadCv.addEventListener('click', () =>{
-  
-  const URL = 'cv/CV_FernandoDeLaCruzZapata.pdf';
+downloadCv.addEventListener("click", () => {
+  const URL = "cv/CV_FernandoDeLaCruzZapata.pdf";
 
-  const enlace = document.createElement('a');
+  const enlace = document.createElement("a");
   enlace.href = URL;
-  enlace.download = 'CV_FernandoDeLaCruzZapata.pdf';
+  enlace.download = "CV_FernandoDeLaCruzZapata.pdf";
 
   enlace.click();
-})
+});
