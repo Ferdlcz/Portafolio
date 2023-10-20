@@ -16,3 +16,17 @@
     transform: rotate(-45deg) translate(-6px, 8px);
     transform-origin: 0 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes spin {
+    to {
+      transform: rotate(720deg); /* Dos vueltas completas (360deg * 2) */
+    }
+  }
+  
+  .hover-spin:hover {
+    animation: spin 2s linear forwards; /* Cambiado a 2 segundos para las dos vueltas */
+  }
