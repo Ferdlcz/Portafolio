@@ -76,3 +76,10 @@ downloadCv.addEventListener("click", () => {
 
   enlace.click();
 });
+
+//Enviar correo
+
+(function(){
+  emailjs.init("user_your_emailjs_user_id"); // Reemplaza "user_your_emailjs_user_id" con tu User ID
+})();
+

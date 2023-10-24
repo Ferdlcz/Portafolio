@@ -7,206 +7,417 @@
     <link rel="icon" href="./img/logo.webp" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Sriracha&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <title>Fernando De La Cruz Zapata</title>
   </head>
-  <body class="bg-sky-100 text-stone-900 dark:bg-primary dark:text-cyan-50 font-varela dark:backdrop-blur-sm">
-
+  <body
+    class="bg-sky-100 text-stone-900 dark:bg-primary dark:text-cyan-50 font-varela dark:backdrop-blur-sm"
+  >
     <header>
-
-      <nav class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
-
+      <nav
+        class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center"
+      >
         <a href="#">
-            <img src="img/logo.webp" alt="logo" width="60" />
+          <img src="img/logo.webp" alt="logo" width="60" />
         </a>
 
-        <div id="menu" class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px]
-                                md:flex flex-col items-start justify-around rounded-lg
-                                text-dark dark:text-white md:flex-row md:w-full md:py-0
-                                md:h-[50px] md:bg-inherit md:dark:bg-primary hidden">
-
+        <div
+          id="menu"
+          class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-primary hidden"
+        >
           <!-- MENU -->
 
-          <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
-
-            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
-
-                <a href="#about">Quien soy</a>
-
+          <ul
+            class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full"
+          >
+            <li
+              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+            >
+              <a href="#about">Quien soy</a>
             </li>
 
-            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
-
+            <li
+              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+            >
               <a href="#technologies">Tecnologias</a>
-
             </li>
 
-            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
-
-                <a href="#projects">Proyectos</a>
-
+            <li
+              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+            >
+              <a href="#projects">Proyectos</a>
             </li>
 
-            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
-
+            <li
+              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
+            >
               <a href="#contact">Contactame</a>
-
             </li>
+          </ul>
 
-        </ul>
-
-            <button id="darkButton" class="transition-all duration-300 transform hover:scale-110">
-
-            <i class="bi bi-moon-stars-fill text-sky-600 text-2xl "></i>
-
-            </button>
-
+          <button
+            id="darkButton"
+            class="transition-all duration-300 transform hover:scale-110"
+          >
+            <i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
+          </button>
         </div>
 
         <!--BOTON MENU MOVIL -->
 
         <button id="menu-button" class="absolute top-10 right-12 md:hidden">
+          <span
+            class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
 
-          <span class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+          <span
+            class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
 
-          <span class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
-
-          <span class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
-
+          <span
+            class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
+          ></span>
         </button>
-
       </nav>
-
     </header>
 
     <main>
+      <section class="my-0 flex flex-col lg:flex-row lg:-[850px]">
+        <!-- IMAGEN -->
 
-        <section class="my-0 flex flex-col lg:flex-row lg:-[850px]">
+        <div class="my-10 w-full">
+          <div
+            class="w-[300px] h-[320px] m-auto bg-[url('../img/Fotoperfil.webp')] lg:bg-[url('../img/Fotoperfil.webp')] bg-cover rounded-lg lg:w-[50%] lg:h-[105%] lg:bg-center lg:bg-no-repeat lg:bg-[length:617px_840px]"
+          ></div>
+        </div>
 
-          <!-- IMAGEN -->
+        <div class="p-10 lg:w-[80%] lg:h-[500px] lg:self-center">
+          <!-- PRESENTACION -->
+          <h1
+            id="about"
+            class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leading-10 animate-bounce"
+          >
+            ¿Quien soy?
+          </h1>
 
-          <div class="my-10 w-full"> 
-            <div class="w-[300px] h-[320px] m-auto bg-[url('../img/Fotoperfil.webp')]
-                        lg:bg-[url('../img/Fotoperfil.webp')] bg-cover rounded-lg lg:w-[50%] 
-                        lg:h-[105%] lg:bg-center lg:bg-no-repeat lg:bg-[length:617px_840px] ">
-            </div>
-          </div>
+          <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300">Fernando De La Cruz Zapata</p>
+          <p class="py-2 text-2xl font-bold text-slate-600 dark:text-slate-300">Desarrollador de software</p>
 
-            <div class="p-10 lg:w-[80%] lg:h-[500px] lg:self-center">
-
-            <!-- PRESENTACION -->
-                <h1 id="about" class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leading-10 animate-bounce">¿Quien soy?</h1>
-
-                <p class="py-2 text-3xl font-bold text-slate-600 dark:text-slate-300 animate-jump-in">Fernando De La Cruz Zapata</p>
-
-                <p class="text-3xl font-bold text-slate-500 dark:text-slate-600 animate-pulse">Software Developer</p>
-
-                <p class="mt-5 text-lg">
-                  Soy un apasionado desarrollador de software enfocado en la creación de soluciones innovadoras para abordar 
-                  desafiantes problemas y necesidades. Mi objetivo constante es el crecimiento profesional, 
-                  a través del aprendizaje continuo y la búsqueda de desafíos que me permitan expandir mis
-                  habilidades en el campo del desarrollo de software.
-                </p>
-
-                <!-- REDES SOCIALES -->
-
-                <div class="py-6">
-
-                    <a href="https://www.instagram.com/fer__delacruz/" class="pr-2 text-3xl hover:text-sky-600">
-                        <i class="bi bi-instagram px-2 animate-pulse transition-all duration-300"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/fernando-de-la-cruz-1572a7234/" class="pr-2 text-3xl hover:text-sky-600">
-                        <i class="bi bi-linkedin px-2 animate-pulse transition-all duration-300"></i>
-                    </a>
-                    <a href="https://github.com/Ferdlcz" class="pr-2 text-3xl hover:text-sky-600">
-                        <i class="bi bi-github px-2 animate-pulse transition-all duration-300"></i>
-                    </a>
-                    <a href="https://www.facebook.com/skater.ferdelacruz" class="pr-2 text-3xl hover:text-sky-600">
-                        <i class="bi bi-facebook px-2 animate-pulse transition-all duration-300"></i>
-                    </a>
-
-                </div>
-
-                <div>
-
-                  <button id="cv" class="border-2 rounded border-sky-500 p-4 w-[250px] text-lg tracking-widest 
-                               hover:bg-sky-500 hover:dark:text-slate-900 transition-all duration-300 
-                                 transform hover:scale-110">Descargar CV</button>
-               
-                </div>
-            </div>
-
-        </section>
-
-         <!-- PROYECTOS -->
-
-        <h2 id="projects" class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest
-                              w-[85%] m-auto text-center pt-14 animate-pulse">Proyectos</h2>
-
-          <section>
-
-            <div class="flex justify-center">
-  
-              <div class="grid grid-cols-4 w-[1200px] mt-5 mb-5 text-3xl border-2 border-sky-500 bg-sky-300
-                        dark:bg-slate-900 p-7 rounded-3xl">
-                
-                
-              
-              </div>
-  
-            </div>
-
-        </section>
-
-      <!-- tECNOLOGIAS -->
-
-        <h2 id="technologies" class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest
-                              w-[85%] m-auto text-center pt-14 animate-pulse">Tecnologias</h2>
-        <section>
-
-          <div class="flex justify-between w-[1200px] mx-auto pr-5 pl-5 mt-5 mb-5 text-3xl 
-                      border-2 border-sky-500 bg-sky-300 dark:bg-slate-900 p-7 rounded-3xl image-container">
-            <img src="img/javascript.webp" alt="Javascript logo" width="50px">
-            <img src="img/php.webp" alt="Php logo" width="50px">
-            <img src="img/bootstrap.webp" alt="Bootstrap logo" width="50px">
-            <img src="img/tailwind.webp" alt="Tailwind logo" width="100px">
-            <img src="img/css.webp" alt="Css logo" width="50px" height="50px">
-            <img src="img/node.webp" alt="Nodejs logo" width="100px">
-            <img src="img/cordova.webp" alt="Cordova logo" width="50px">
-          </div>
-
-        </section>
-
-        
-
-        <section>
-
-          <div class="border-t-2 h-[200px]">
-
-            <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest
-                       w-[85%] m-auto text-center pt-10 pb-10 animate-pulse">Contactame</h2>
-
-            <div class="px-10 flex justify-center">
-
-              <form action="">
-
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea class="rounded-lg mt-10" name="" id="" cols="80" rows="5"></textarea>
-
-              </form>
-            
-            </div>
+         
           
+          <p class="mt-5 text-lg">
+            Soy un apasionado desarrollador de software enfocado en la creación
+            de soluciones innovadoras para abordar desafiantes problemas y
+            necesidades. Mi objetivo constante es el crecimiento profesional, a
+            través del aprendizaje continuo y la búsqueda de desafíos que me
+            permitan expandir mis habilidades en el campo del desarrollo de
+            software.
+          </p>
+
+          <!-- REDES SOCIALES -->
+
+          <div class="py-6">
+            <a
+              href="https://www.instagram.com/fer__delacruz/"
+              class="pr-2 text-3xl hover:text-sky-600"
+            >
+              <i
+                class="bi bi-instagram px-2 animate-pulse transition-all duration-300"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fernando-de-la-cruz-1572a7234/"
+              class="pr-2 text-3xl hover:text-sky-600"
+            >
+              <i
+                class="bi bi-linkedin px-2 animate-pulse transition-all duration-300"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/Ferdlcz"
+              class="pr-2 text-3xl hover:text-sky-600"
+            >
+              <i
+                class="bi bi-github px-2 animate-pulse transition-all duration-300"
+              ></i>
+            </a>
+            <a
+              href="https://www.facebook.com/skater.ferdelacruz"
+              class="pr-2 text-3xl hover:text-sky-600"
+            >
+              <i
+                class="bi bi-facebook px-2 animate-pulse transition-all duration-300"
+              ></i>
+            </a>
           </div>
-        
-        </section>
 
+          <div>
+            <button
+              id="cv"
+              class="border-2 rounded border-sky-500 p-4 w-[250px] text-lg tracking-widest hover:bg-sky-500 hover:dark:text-slate-900 transition-all duration-300 transform hover:scale-110"
+            >
+              Descargar CV
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <!-- TECNOLOGIAS -->
+
+      <h2
+        id="technologies"
+        class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-14 animate-pulse"
+      >
+        Tecnologias
+      </h2>
+
+      <section
+        class="my-12 flex flex-col items-center justify-center w-[90%] m-auto"
+      >
+        <div
+          class="grid grid-cols-3 lg:flex lg:justify-between lg:w-[96%] border-1 rounded-lg bg-white dark:bg-slate-800 p-5"
+        >
+          <img src="../dist/img/bootstrap.webp" alt="" width="50px" />
+          <img src="../dist/img/cordova.webp" alt="" width="50px" />
+          <img src="../dist/img/javascript.webp" alt="" width="50px" />
+          <img src="../dist/img/node.webp" alt="" width="100px" />
+          <img src="../dist/img/php.webp" alt="" width="50px" />
+          <img src="../dist/img/tailwind.webp" alt="" width="100px" />
+          <img src="../dist/img/css.webp" alt="" width="50px" />
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+
+      <h2
+        id="projects"
+        class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-14 animate-pulse"
+      >
+        Proyectos
+      </h2>
+
+      <section
+        class="my-12 flex flex-col items-center justify-center w-[90%] m-auto lg:grid lg:grid-cols-2"
+      >
+        <!-- PRIMER PROYECTO -->
+
+        <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+          <div class="m-2">
+            <img
+              src="../dist/img/AppEval/appEval1.webp"
+              alt=""
+              class="opacity-80 hover:opacity-100"
+            />
+
+            <h4 class="font-bold my-2">App Web - Gestion de evaluaciones</h4>
+
+            <article class="flex justify-between">
+              <div class="flex flex-nowrap items-center">
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >PHP</span
+                >
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >JS</span
+                >
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >Bootstrap</span
+                >
+              </div>
+
+              <div
+                class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap"
+              >
+                <a href="">
+                  <i class="bi bi-github px-2"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-eye px-2"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- SEGUNDO PROYECTO -->
+
+        <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+          <div class="m-2">
+            <img
+              src="../dist/img/Urban/urban5.webp"
+              alt=""
+              class="opacity-80 hover:opacity-100"
+            />
+
+            <h4 class="font-bold my-2">App Web - Tienda de ropa</h4>
+
+            <article class="flex justify-between">
+              <div class="flex flex-nowrap items-center">
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >PHP</span
+                >
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >JS</span
+                >
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >Bootstrap</span
+                >
+              </div>
+
+              <div
+                class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap"
+              >
+                <a href="https://github.com/Ferdlcz/UrbanChic">
+                  <i class="bi bi-github px-2"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-eye px-2"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- TERCER PROYECTO -->
+
+        <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+          <div class="m-2">
+            <img
+              src="../dist/img/Morty/Morty1.webp"
+              alt=""
+              class="opacity-80 hover:opacity-100"
+            />
+
+            <h4 class="font-bold my-2">App Web - Rick & Morty Wiki</h4>
+
+            <article class="flex justify-between">
+              <div class="flex flex-nowrap items-center">
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >REACT</span
+                >
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >Bootstrap</span
+                >
+              </div>
+
+              <div
+                class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap"
+              >
+                <a href="https://github.com/Ferdlcz/Rick-Morty">
+                  <i class="bi bi-github px-2"></i>
+                </a>
+                <a href="https://rickandmorty-jade.vercel.app/">
+                  <i class="bi bi-eye px-2"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- CUARTO PROYECTO -->
+
+        <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+          <div class="m-2">
+            <img
+              src="../dist/img/PowerHouse/PW3.webp"
+              alt=""
+              class="opacity-80 hover:opacity-100 h-[270px] m-auto"
+            />
+
+            <h4 class="font-bold my-2">App Movil - Tienda de electronica</h4>
+
+            <article class="flex justify-between">
+              <div class="flex flex-nowrap items-center">
+                <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700"
+                  >JAVA</span
+                >
+              </div>
+
+              <div
+                class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap"
+              >
+                <a href="https://github.com/Ferdlcz/Power-House-Electronics">
+                  <i class="bi bi-github px-2"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-eye px-2"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <h2
+        id="contact" class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-10 animate-pulse"
+      >
+        Contactame
+      </h2>
+
+      <section class="my-12 flex justify-center w-[90%] m-auto pb-10 lg:pb-0">
+        <div class="border-1 rounded-lg bg-white dark:bg-slate-800 p-12">
+          <form class="w-full max-w-md">
+            <div class="mb-4">
+              <label
+                for="nombre"
+                class="block text-slate-700 dark:text-white text-sm font-bold mb-2"
+                >Nombre:</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="w-full px-3 py-2 leading-tight text-slate-700 dark:text-white border rounded-lg shadow-md focus:outline-none focus:shadow-outline-blue focus:border-blue-500 dark:bg-slate-700"
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-slate-700 dark:text-white text-sm font-bold mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-3 py-2 leading-tight text-slate-700 dark:text-white border rounded-lg shadow-md focus:outline-none focus:shadow-outline-blue focus:border-blue-500 dark:bg-slate-700"
+                placeholder="Tu correo electrónico"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="mensaje"
+                class="block text-slate-700 dark:text-white text-sm font-bold mb-2"
+                >Mensaje:</label
+              >
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="w-full px-3 py-2 leading-tight text-slate-700 dark:text-white border rounded-lg shadow-md focus:outline-none focus:shadow-outline-blue focus:border-blue-500 dark:bg-slate-700"
+                placeholder="Tu mensaje"
+              ></textarea>
+            </div>
+            <div class="flex items-center justify-center">
+              <button
+                id="send"
+                class="border-2 rounded border-sky-500 p-4 w-[250px] text-lg tracking-widest hover:bg-sky-500 hover:dark:text-slate-900 transition-all duration-300 transform hover:scale-110"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="./scripts/app.js"></script>
   </body>
 </html>
