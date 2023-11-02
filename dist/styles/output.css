@@ -661,16 +661,16 @@ video {
   height: 83.333333%;
 }
 
-.h-\[320px\] {
-  height: 320px;
-}
-
 .h-\[380px\] {
   height: 380px;
 }
 
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .max-h-\[270px\] {
@@ -829,8 +829,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/Fotoperfil\.webp\'\)\] {
-  background-image: url('../img/Fotoperfil.webp');
+.bg-\[url\(\'\.\.\/img\/cvimagerb\.png\'\)\] {
+  background-image: url('../img/cvimagerb.png');
 }
 
 .bg-cover {
@@ -1203,12 +1203,12 @@ html{
     align-self: center;
   }
 
-  .lg\:bg-\[url\(\'\.\.\/img\/Fotoperfil\.webp\'\)\] {
-    background-image: url('../img/Fotoperfil.webp');
+  .lg\:bg-\[url\(\'\.\.\/img\/cvimagerb\.png\'\)\] {
+    background-image: url('../img/cvimagerb.png');
   }
 
-  .lg\:bg-\[length\:617px_840px\] {
-    background-size: 617px 840px;
+  .lg\:bg-\[length\:720px_1280px\] {
+    background-size: 720px 1280px;
   }
 
   .lg\:bg-center {
