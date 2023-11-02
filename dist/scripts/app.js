@@ -5,7 +5,7 @@
     const downloadCv = document.querySelector("#cv");
     
     downloadCv.addEventListener("click", () => {
-      const URL = "/dist/cv/CV_FernandoDeLaCruzZapata.pdf";
+      const URL = "/dist/cv/CV_FernandoDelacruzZapata.pdf";
       
       const enlace = document.createElement("a");
       enlace.href = URL;
