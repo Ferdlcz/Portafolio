@@ -1,5 +1,3 @@
-
-    
     // Descargar curriculum
     
     const downloadCv = document.querySelector("#cv");
@@ -58,11 +56,57 @@
 
       emailjs.sendForm(serviceID, templateID, this).then(() =>{
         alert('Mensaje enviado correctamente!!')
-        inputName.value = "";
-        inputEmail.value = "";
-        inputMessage.value = "";
+        this.reset()
       }, (err)=>{
-        alert("Error al enviar el mensaje")
+        alert('Error al enviar mensaje' + err)
        // alert(JSON.stringify(err));
       })
     })
+
+    async function loadAnimationFromPath(containerId, jsonPath) {
+      try {
+        const response = await fetch(jsonPath);
+        const animationData = await response.json();
+    
+        var container = document.getElementById(containerId);
+        var animationOptions = {
+          container: container,
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          animationData: animationData,
+        };
+        lottie.loadAnimation(animationOptions);
+      } catch (error) {
+        console.error("Error cargando la animación:", error);
+      }
+    }
+    
+    // Rutas a los archivos JSON de las animaciones
+    var angular = "/dist/img/technologies/angular.json";
+    var cordova = "/dist/img/technologies/cordova.json";
+    var bootstrap = "/dist/img/technologies/bootstrap.json";
+    var csharp = "/dist/img/technologies/csharp.json";
+    var css = "/dist/img/technologies/css.json";
+    var ionic = "/dist/img/technologies/ionic.json";
+    var node = "/dist/img/technologies/nodejs.json";
+    var php = "/dist/img/technologies/php.json";
+    var react = "/dist/img/technologies/react.json";
+    var tailwind = "/dist/img/technologies/tailwind.json";
+    var unity = "/dist/img/technologies/java.json";
+    var js = "/dist/img/technologies/javascript.json";
+
+    // Cargar las animaciones en los contenedores
+    loadAnimationFromPath("animation-container-1", angular);
+    loadAnimationFromPath("animation-container-2", cordova);
+    loadAnimationFromPath("animation-container-3", bootstrap);
+    loadAnimationFromPath("animation-container-4", csharp);
+    loadAnimationFromPath("animation-container-5", css);
+    loadAnimationFromPath("animation-container-6", ionic);
+    loadAnimationFromPath("animation-container-7", node);
+    loadAnimationFromPath("animation-container-8", php);
+    loadAnimationFromPath("animation-container-9", react);
+    loadAnimationFromPath("animation-container-10", tailwind);
+    loadAnimationFromPath("animation-container-11", unity);
+    loadAnimationFromPath("animation-container-12", js);
+
