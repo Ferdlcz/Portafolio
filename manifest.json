@@ -1,0 +1,30 @@
+{
+    "main": "Portafolio Fernando Delacruz",
+    "short_name": "Portafolio Fernando Delacruz",
+    "start_url": "/index.html",
+    "description": "Portafolio",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "icons": [
+        {
+            "src": "/dist/img/icons/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/dist/img/icons/logo.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        },
+
+        {
+            "src": "/dist/img/icons/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        }
+
+    ]
+}
