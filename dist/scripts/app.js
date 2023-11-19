@@ -123,3 +123,38 @@ if('serviceWorker' in navigator){
     loadAnimationFromPath("animation-container-10", tailwind);
     loadAnimationFromPath("animation-container-11", unity);
     loadAnimationFromPath("animation-container-12", js);
+
+
+    let idiomaUsuario = localStorage.getItem('idioma') || 'es';
+
+    function cambiarIdioma() {
+      const elementos = document.querySelectorAll('[data-es], [data-en]');
+    
+      elementos.forEach(elemento => {
+        if (idiomaUsuario === 'es' && elemento.dataset.es) {
+          if (elemento.tagName === 'INPUT' || elemento.tagName === 'TEXTAREA') {
+            elemento.placeholder = elemento.dataset.es;
+          } else {
+            elemento.textContent = elemento.dataset.es;
+          }
+        } else if (idiomaUsuario === 'en' && elemento.dataset.en) {
+          if (elemento.tagName === 'INPUT' || elemento.tagName === 'TEXTAREA') {
+            elemento.placeholder = elemento.dataset.en;
+          } else {
+            elemento.textContent = elemento.dataset.en;
+          }
+        }
+      });
+    
+      console.log('Idioma cambiado a:', idiomaUsuario);
+      localStorage.setItem('idioma', idiomaUsuario);
+    }
+    
+    const language = document.getElementById("languageButton");
+    
+    language.addEventListener("click", function () {
+      idiomaUsuario = idiomaUsuario === 'es' ? 'en' : 'es';
+      cambiarIdioma();
+    });
+    
+    cambiarIdioma();
