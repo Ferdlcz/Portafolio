@@ -6,6 +6,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.5/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="./dist/styles/output.css" />
+    <link rel="stylesheet" href="./dist/styles/styles.css">
     <link rel="icon" href="./dist/img/icons/logo.svg" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,80 +28,54 @@
     class="bg-sky-100 text-stone-900 dark:bg-primary dark:text-cyan-50 font-varela dark:backdrop-blur-sm"
   >
     <header>
-      <nav
-        class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center"
-      >
+      <nav class="flex justify-between py-10 m-auto px-10 text-lg font-medium tracking-widest md:items-center">
         <a href="#">
           <img src="./dist/img/icons/logo.svg" alt="logo" width="60" />
         </a>
-
-        <div
-          id="menu"
-          class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-primary hidden"
-        >
+      
+        <div id="menu" class="bg-white dark:bg-slate-800 p-7 h-[380px] w-[320px] md:flex flex-col items-start justify-around rounded-lg text-dark dark:text-white md:flex-row md:w-full md:py-0 md:h-[50px] md:bg-inherit md:dark:bg-primary hidden">
           <!-- MENU -->
-
-          <ul
-            class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full"
-          >
-            <li
-              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
-            >
+          <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
+            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
               <a href="#about">Quien soy</a>
             </li>
-
-            <li
-              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
-            >
+      
+            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
               <a href="#technologies">Tecnologias</a>
             </li>
-
-            <li
-              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
-            >
+      
+            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
               <a href="#projects">Proyectos</a>
             </li>
-
-            <li
-              class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110"
-            >
+      
+            <li class="md:px-5 hover:text-sky-600 transition-all duration-300 hover:scale-110">
               <a href="#contact">Contactame</a>
             </li>
           </ul>
-
-          <button
-            id="darkButton"
-            class="transition-all duration-300 transform hover:scale-110 button-transition"
-          >
-            <i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
-          </button>
+      
+          <div class="flex items-center mr-5">
+            <button id="darkButton" class="transition-all duration-300 transform hover:scale-110 button-transition mr-4">
+              <i class="bi bi-moon-stars-fill text-sky-600 text-2xl"></i>
+            </button>
+          </div>
         </div>
-
-        <!--BOTON MENU MOVIL -->
-
+      
+        <!-- BOTON MENU MOVIL -->
         <button id="menu-button" class="absolute top-10 right-12 md:hidden">
-          <span
-            class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
-          ></span>
-
-          <span
-            class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
-          ></span>
-
-          <span
-            class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"
-          ></span>
+          <span class="br-1 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+          <span class="br-2 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
+          <span class="br-3 block bg-black dark:bg-white my-2 rounded-md h-[3px] w-[28px]"></span>
         </button>
       </nav>
     </header>
 
     <main>
-      <section class="my-0 flex flex-col lg:flex-row lg:-[850px]">
+      <section class="my-0 flex flex-col lg:flex-row lg:-[850px] animate-fade-in">
         <!-- IMAGEN   -->
 
         <div class="my-10 w-full">
           <div
-            class="w-[300px] h-[400px] m-auto bg-[url('../img/cvimagerb.png')] lg:bg-[url('../img/cvimagerb.png')] bg-cover rounded-lg lg:w-[50%] lg:h-[105%] lg:bg-center lg:bg-no-repeat"
+            class="animate-rotate-and-scale w-[300px] h-[400px] m-auto bg-[url('../img/cvimagerb.png')] lg:bg-[url('../img/cvimagerb.png')] bg-cover rounded-lg lg:w-[50%] lg:h-[105%] lg:bg-center lg:bg-no-repeat"
           ></div>
         </div>
 
@@ -193,33 +168,33 @@
           
           <div class="flex justify-around">
 
-            <div id="animation-container-1" class="animation-container " style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Angular</span></div>
-            <div id="animation-container-2" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;" > <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Cordova</span></div>
-            <div id="animation-container-3" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Bootstrap</span></div>
+            <div id="animation-container-1" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">Angular</span></div>
+            <div id="animation-container-3" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Bootstrap</span></div>
+            <div id="animation-container-2" class="animation-container technologies"> <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Cordova</span></div>
           
           </div>
 
           <div class="flex justify-around">
 
-            <div id="animation-container-4" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">C#</span></div>
-            <div id="animation-container-5" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">CSS3</span></div>
-            <div id="animation-container-6" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Ionic</span></div>
+            <div id="animation-container-5" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">CSS3</span></div>
+            <div id="animation-container-6" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Ionic</span></div>
+            <div id="animation-container-4" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">C#</span></div>
 
           </div>
 
           <div class="flex justify-around">
 
-            <div id="animation-container-7" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">NodeJS</span></div>
-            <div id="animation-container-8" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Php</span></div>
-            <div id="animation-container-9" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">React</span></div>
+            <div id="animation-container-8" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Php</span></div>
+            <div id="animation-container-9" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">React</span></div>
+            <div id="animation-container-7" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">NodeJS</span></div>
 
           </div>
 
           <div class="flex justify-around">
 
-            <div id="animation-container-10" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">TailwindCSS</span></div>
-            <div id="animation-container-11" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Java</span></div>
-            <div id="animation-container-12" class="animation-container" style="width: 15%; height: 55%; font-size: 10px;"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">JavaScript</span></div>
+            <div id="animation-container-10" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">TailwindCSS</span></div>
+            <div id="animation-container-11" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">Java</span></div>
+            <div id="animation-container-12" class="animation-container technologies"><span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700 sm:text-sm">JavaScript</span></div>
 
           </div>
         </div>

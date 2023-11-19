@@ -123,4 +123,3 @@ if('serviceWorker' in navigator){
     loadAnimationFromPath("animation-container-10", tailwind);
     loadAnimationFromPath("animation-container-11", unity);
     loadAnimationFromPath("animation-container-12", js);
-
