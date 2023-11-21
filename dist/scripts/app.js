@@ -52,7 +52,6 @@ if('serviceWorker' in navigator){
     
     carouselProjects();
     
-    
     //Enviar correo
 
     emailjs.init('Zy8LzYvShttUi77Uh')
@@ -69,10 +68,15 @@ if('serviceWorker' in navigator){
       const templateID = 'template_q4bclib';
 
       emailjs.sendForm(serviceID, templateID, this).then(() =>{
-        alert('Mensaje enviado correctamente!!')
+       
+        alertify.alert('CORRECTO', 'Mensaje enviado correctamente!!', function(){ alertify.success('Ok'); });
+        //alert('Mensaje enviado correctamente!!')
         this.reset()
       }, (err)=>{
-        alert('Error al enviar mensaje' + err)
+
+        alertify.alert('Error al enviar el mensaje' + err)
+        alertify.alert('ERROR', 'Error al enviar mensaje', function(){ alertify.success('Ok'); });
+        //alert('Error al enviar mensaje' + err)
        // alert(JSON.stringify(err));
       })
     })
