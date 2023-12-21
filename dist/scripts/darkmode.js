@@ -16,16 +16,16 @@ const darkButton = document.querySelector("#darkButton");
 
 //evento de click para cambiar el tema del color
 darkButton.addEventListener("click", function () {
-  if (localStorage.getItem("color-theme")) {
-    if (localStorage.getItem("color-theme") === "light") {
+  if (localStorage.getItem("color-theme")) {  //Verificar si hay un tema almacenado
+    if (localStorage.getItem("color-theme") === "light") { //si hay tema claro asigna tema oscuro
       document.documentElement.classList.add("dark");
-      localStorage.setItem("color-theme", "dark");
-    } else {
+      localStorage.setItem("color-theme", "dark"); 
+    } else { //si hay tema oscuro asigna tema claro
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
     }
-  } else {
-    if (document.documentElement.classList.contains("dark")) {
+  } else {  //si no hay valor en local storage verifica si hay una clase en el html y actualiza segun el modo deseado
+    if (document.documentElement.classList.contains("dark")) { 
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
     } else {

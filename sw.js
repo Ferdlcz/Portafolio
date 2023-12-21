@@ -30,6 +30,8 @@ const archivosCache = [
   "/dist/img/Urban/urban4.webp",
   "/dist/img/Urban/urban5.webp",
   "/dist/img/cvimagerb.png",
+  "/dist/img/Ezra's/Gm1.png",
+  "/dist/img/Ezra's/Menu.png",
   "/dist/cv/CV_FernandoDelacruzZapata.pdf",
   "/dist/scripts/app.js",
   "/dist/scripts/darkmode.js",

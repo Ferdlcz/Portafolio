@@ -1,3 +1,4 @@
+//*** Verificar si es compatible con el navegador y registrar en caso de que si ***//
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("/sw.js")
@@ -16,8 +17,8 @@ const downloadCv = document.querySelector("#cv");
 
 downloadCv.addEventListener("click", () => {
   const URL = "/dist/cv/CV_FernandoDelacruzZapata.pdf";
-
   const enlace = document.createElement("a");
+  
   enlace.href = URL;
   enlace.download = "CV_FernandoDeLaCruzZapata.pdf";
 
@@ -29,13 +30,14 @@ downloadCv.addEventListener("click", () => {
 function carouselProjects() {
   const cardOptions = {
     cellAlign: "left",
-    wrapAround: true,
+    wrapAround: true, 
     autoPlay: true,
     imagesLoaded: true,
   };
 
-  const carousels = document.querySelectorAll('[class^="carousel-"');
+  const carousels = document.querySelectorAll('[class^="carousel-"'); //^= trae todos los elementos que comiencen con carousel-
 
+  //*** Crear un objeto cardOptions para cada elemento ***/
   carousels.forEach((carosel, index) => {
     const options = {
       ...cardOptions,
@@ -49,6 +51,7 @@ carouselProjects();
 
 //Enviar correo
 
+//*** Inicializar emailJS con su llave publica ***/
 emailjs.init("Zy8LzYvShttUi77Uh");
 
 const btnSend = document.getElementById("send");
@@ -56,10 +59,9 @@ let inputName = document.getElementById("nombre");
 let inputEmail = document.getElementById("email");
 let inputMessage = document.getElementById("mensaje");
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+//*** Evento a formulario ***/
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); //Evitar envio predeterminado
 
     const serviceID = "service_ut9vn3e";
     const templateID = "template_q4bclib";
@@ -79,7 +81,7 @@ document
       (err) => {
         alertify.alert("Error al enviar el mensaje" + err);
         alertify.alert("ERROR", "Error al enviar mensaje", function () {
-          alertify.success("Ok");
+        alertify.success("Ok");
         });
         //alert('Error al enviar mensaje' + err)
         // alert(JSON.stringify(err));
@@ -140,13 +142,17 @@ function cambiarIdioma() {
   const elementos = document.querySelectorAll("[data-es], [data-en]");
 
   elementos.forEach((elemento) => {
-    if (idiomaUsuario === "es" && elemento.dataset.es) {
+    //Comprobar idioma español
+    if (idiomaUsuario === "es" && elemento.dataset.es) { 
+      //Actualiza placeholders al español
       if (elemento.tagName === "INPUT" || elemento.tagName === "TEXTAREA") {
         elemento.placeholder = elemento.dataset.es;
       } else {
         elemento.textContent = elemento.dataset.es;
       }
+      //Comprobar idioma ingles
     } else if (idiomaUsuario === "en" && elemento.dataset.en) {
+      //Actualiza placeholders al ingles
       if (elemento.tagName === "INPUT" || elemento.tagName === "TEXTAREA") {
         elemento.placeholder = elemento.dataset.en;
       } else {
@@ -154,13 +160,12 @@ function cambiarIdioma() {
       }
     }
   });
-
-  console.log("Idioma cambiado a:", idiomaUsuario);
   localStorage.setItem("idioma", idiomaUsuario);
 }
 
 const language = document.getElementById("languageButton");
 
+//al dar click compara con un operador terneario, si el idioma es español, lo cambia a ingles y viceversa
 language.addEventListener("click", function () {
   idiomaUsuario = idiomaUsuario === "es" ? "en" : "es";
   cambiarIdioma();
